@@ -1,0 +1,231 @@
+
+body{
+    /* background: linear-gradient(45deg , #405de6,#5851db,#833ab4,#c13584
+    ,#e1306c,#fd1d1d,#1da1f2);
+   */
+background: linear-gradient(90deg,
+#ee7752,
+#e73c7e,
+#23a6d5,
+#23d5ab
+);
+background-size: 400% 400%;
+animation: gradient 5s infinite ;
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
+}
+@keyframes backgroundZoomAnimate{
+    from{
+        transform: scale(1) translate(-10px);
+    }
+    to {
+        transform: scale(1.1) translate(-10px);
+    }
+}
+.all{
+    display: flex;
+    width: 100%;
+    height:auto;
+    margin: 0 auto;
+    padding: 0;
+ 
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.profile_card{
+    
+    display: flex;
+   text-align: center;
+   align-items: center;
+    box-shadow: 0 18px 200px -60px #c13584;
+    border-radius: 50px;
+    width: 550px   ; 
+    height: 850px;
+    padding: 3rem 5rem;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+   
+ 
+}
+.profile_card .profile_card_img img{
+    width: 200px ;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    box-shadow:0 10px 60px -10px  rgba(2, 38, 64, 0.5) ;
+    border: 10px solid transparent;
+    animation: backgroundZoomAnimate infinite 20s;
+}
+
+.profile-card_decs{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25;
+
+}
+.profile-card_decs h1{
+    /* color:rgb(245, 100, 100); */
+    background: linear-gradient(to right, #405de6,#5851db,#833ab4,#c13584
+    ,#e1306c,#fd1d1d,#1da1f2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+
+}
+
+
+.profile-card_decs div{
+    font-size: 20px;
+    color: rgb(99, 221, 242);
+}
+#location{
+    color: #1da1f2;
+}
+.profile-card_info{
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+
+}
+/* span{
+    color: #f9004d;
+}
+#span1{
+    color:#f74aac ;
+} */
+.profile-card_info div{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+ color: rgb(242, 99, 242);
+   
+}
+
+.profile-card_info div:first-child {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+
+}
+.profile-card_info div:last-child {
+    font-size: 16px;
+    opacity: .7 ;
+
+}
+.profile-card_socail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile-card_socail a{
+    display: inline-flex;
+    width: 55px;
+    height: 55px;
+    margin: 15px;
+    border-radius: 40%;
+    justify-content: center;
+    color: #f9004d;
+    position: relative;
+    flex-shrink: 0;
+    transform: all .2s;
+    text-decoration: none;
+
+}
+.profile-card_socail a:hover{
+    transform:  scale(1.1) translateY(-5px);
+
+}
+.profile-card_socail i{
+    background: none;
+}
+
+.facebook{
+    background: linear-gradient(45deg, #3d5998 ,#0078d7);
+    box-shadow:0 4px 30px rgba(43 , 98, 169 ,0.5) ;
+    align-items: center;
+}
+
+.twitter{
+    background: linear-gradient(45deg ,#1da1f2,#0e71c8);
+    box-shadow: 0 4px 30px rgba(19,127,212,0.7);
+    align-items: center;
+    
+}
+.instagram{
+    background: linear-gradient(45deg,#fd1d1d , #405de6,#5851db,#833ab4,#c13584
+    ,#e130e1);
+    box-shadow: 0 4px 30px rgba(120,64,190,0.6);
+    align-items: center;
+    
+}
+.behance{
+    background: linear-gradient(45deg,#1769ff,#312fca);
+    box-shadow: 0 4px 30px rgba(27,86,231,0.7);
+    align-items: center;
+    
+}
+.github{
+    background: linear-gradient(45deg ,#333333,#626b73);
+    box-shadow: 0 4px 30px rgba(63,65,67,0.6);
+    align-items: center;
+    
+}
+.profile-card_actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+button{
+    font-weight: bold;
+    font-size: 22px;
+    padding: 15px 0;
+    min-width: 200px;
+    color: rgb(142, 244, 142);
+    cursor: pointer;
+    transition: all .2s;
+    background: none;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+
+.blue{
+    background: linear-gradient(45deg,#1da1f2,#0e71c8);
+    box-shadow: 0 4px 30px rgba(19,127,212,0.4);
+    border-color:#c13584;
+
+
+}
+.blue:hover{
+    box-shadow: 0 7px 30px rgba(223 ,45,70,0.35)
+}
+.orange{
+    background: linear-gradient(45deg,#d5135a,#f05924);
+    box-shadow: 0 4px 30px rgba(223,45,70,0.35);
+    border-color: #1da1f2;
+}
+.orange:hover{
+    box-shadow: 0 7px 30px rgba(223 ,45,70,0.75);
+
+}
